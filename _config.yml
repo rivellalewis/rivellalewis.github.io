@@ -1,0 +1,13 @@
+# Site settings
+title: Rivella Lewis Art
+email: rivella@rivella-art.com
+description: > # this means to ignore newlines until "baseurl:"
+  Rivella Lewis: Artist, Teacher, Public Speaker, Demonstrator
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: rivellalewis
+facebook_page: rivellalewis
+
+# Build settings
+markdown: kramdown
+

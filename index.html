@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <p>Rivella was born Valerie Rivella Roth on the 25th Januray 1941.
+
+    <p>From an early age she was into anything artistic. Theatre, drawing, painting, designing anything that was new and
+        interesting as well as appearing in many theatrical productions and music videos.</p>
+
+    <p>She used to belong to a radio club and sent most of her earlier works to them for competitions, then in 1950
+        entered the Tara Girls School in Paramatta, NSW, art show that was being judged by a well known artist.</p>
+
+    <p>Rivella won a Highly Commended prize for her painting of the school - done with a broken collar bone.</p>
+
+    <p>At the age of 13 she was offered a job with Hanna Barbara to be sent to Disney Studios in the USA to study, then
+        return and work for Hanna Barbara - but her father would not let her go.</p>
+
+
+    <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
